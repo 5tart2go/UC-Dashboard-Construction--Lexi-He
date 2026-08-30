@@ -1,3982 +1,884 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": []
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    },
-    "widgets": {
-      "application/vnd.jupyter.widget-state+json": {
-        "version_major": 2,
-        "version_minor": 0,
-        "state": {
-          "236d636f61e94d6c85c8cf3e0a85762f": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "DropdownModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "DropdownModel",
-              "_options_labels": [
-                "Alameda",
-                "Contra Costa",
-                "Marin",
-                "Napa",
-                "San Francisco",
-                "San Mateo",
-                "Santa Clara",
-                "Solano",
-                "Sonoma"
-              ],
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "DropdownView",
-              "description": "County:",
-              "description_tooltip": null,
-              "disabled": false,
-              "index": 6,
-              "layout": "IPY_MODEL_e41654a1efcc430bb8442d591a7e22fc",
-              "style": "IPY_MODEL_bae4e70f169948a6b7e968671d6f653b"
-            }
-          },
-          "e41654a1efcc430bb8442d591a7e22fc": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": null,
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "400px"
-            }
-          },
-          "bae4e70f169948a6b7e968671d6f653b": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "DescriptionStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "DescriptionStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "description_width": "initial"
-            }
-          },
-          "34f2a7f71e7a407bb38dd2927699cce1": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "DropdownModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "DropdownModel",
-              "_options_labels": [
-                "Berkeley",
-                "Davis",
-                "Irvine",
-                "Los Angeles",
-                "Merced",
-                "Riverside",
-                "San Diego",
-                "Santa Barbara",
-                "Santa Cruz"
-              ],
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "DropdownView",
-              "description": "UC campus:",
-              "description_tooltip": null,
-              "disabled": false,
-              "index": 7,
-              "layout": "IPY_MODEL_028d519999ec4792af88faaec8f1c4f9",
-              "style": "IPY_MODEL_afc1b80d05e64debba0f0dc92e72416a"
-            }
-          },
-          "028d519999ec4792af88faaec8f1c4f9": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": null,
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "400px"
-            }
-          },
-          "afc1b80d05e64debba0f0dc92e72416a": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "DescriptionStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "DescriptionStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "description_width": "initial"
-            }
-          },
-          "db4a55ea9eaa45d29b066d3ebc7866a7": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "primary",
-              "description": "🎮 Start Game",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_8f0f7a982eb94f8ab14f650d5facbfd6",
-              "style": "IPY_MODEL_75958da7e6b54fe39395e79a03d20a5f",
-              "tooltip": ""
-            }
-          },
-          "8f0f7a982eb94f8ab14f650d5facbfd6": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "40px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "200px"
-            }
-          },
-          "75958da7e6b54fe39395e79a03d20a5f": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "03f99ceebfc04108a2e93ea514180150": {
-            "model_module": "@jupyter-widgets/output",
-            "model_name": "OutputModel",
-            "model_module_version": "1.0.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/output",
-              "_model_module_version": "1.0.0",
-              "_model_name": "OutputModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/output",
-              "_view_module_version": "1.0.0",
-              "_view_name": "OutputView",
-              "layout": "IPY_MODEL_5ad88ccb85a94f84bdd068af74b9218b",
-              "msg_id": "",
-              "outputs": [
-                {
-                  "output_type": "display_data",
-                  "data": {
-                    "text/plain": "<IPython.core.display.HTML object>",
-                    "text/html": "\n        <div style=\"\n            padding:20px;\n            border-radius:12px;\n            background:#f5f5f5;\n            margin-bottom:15px;\n        \">\n            <h2>Round 5 of 5</h2>\n\n            <h3>📍 County</h3>\n            <p style=\"font-size:22px;\"><b>Sonoma</b></p>\n\n            <h3>🎓 UC Campus</h3>\n            <p style=\"font-size:22px;\"><b>UC Los Angeles</b></p>\n\n            <hr>\n\n            <h3>🤔 What do you think the historical admission rate was?</h3>\n        </div>\n        "
-                  },
-                  "metadata": {}
-                },
-                {
-                  "output_type": "display_data",
-                  "data": {
-                    "text/plain": "HBox(children=(Button(description='Under 20%', layout=Layout(height='45px', width='180px'), style=ButtonStyle(…",
-                    "application/vnd.jupyter.widget-view+json": {
-                      "version_major": 2,
-                      "version_minor": 0,
-                      "model_id": "84a21b552de0442198a777209abc2de9"
-                    }
-                  },
-                  "metadata": {}
-                }
-              ]
-            }
-          },
-          "5ad88ccb85a94f84bdd068af74b9218b": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": null,
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": null
-            }
-          },
-          "8dc7b48068f94c2d9351534f233eafc1": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "HBoxModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "HBoxModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "HBoxView",
-              "box_style": "",
-              "children": [
-                "IPY_MODEL_30d9cfd9e50c41af8eb19707813fd072",
-                "IPY_MODEL_f28660bc6f444e3cb8b0caed201aae9b",
-                "IPY_MODEL_5773203d5ae44e58b32f7098755ce88e",
-                "IPY_MODEL_2f95150ae5ab47528e5d97f4237b6c52",
-                "IPY_MODEL_3f7e4905b05e4d17b62f03b15f945164"
-              ],
-              "layout": "IPY_MODEL_abd62ca7ee444b35a51504b354b4f0d2"
-            }
-          },
-          "30d9cfd9e50c41af8eb19707813fd072": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "Under 20%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_831e9824f5ea47c5aa397b065d564a34",
-              "style": "IPY_MODEL_891211e9cc6e4220bd9f65664f78bde6",
-              "tooltip": ""
-            }
-          },
-          "f28660bc6f444e3cb8b0caed201aae9b": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "20–40%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_55748705a62844f7b51b164dcf1b504a",
-              "style": "IPY_MODEL_fb10eafcd33a4375870f1210d4b9a8e8",
-              "tooltip": ""
-            }
-          },
-          "5773203d5ae44e58b32f7098755ce88e": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "40–60%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_c52987f9ac854b4eb7e908769c4cb6c6",
-              "style": "IPY_MODEL_424d2ccc746643368345cbd2d88535e6",
-              "tooltip": ""
-            }
-          },
-          "2f95150ae5ab47528e5d97f4237b6c52": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "60–80%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_b014bb0533ec4a6782a10d3d55ca44f7",
-              "style": "IPY_MODEL_9047826c5bad487ebb96f9f3cd03e88a",
-              "tooltip": ""
-            }
-          },
-          "3f7e4905b05e4d17b62f03b15f945164": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "Over 80%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_3e7844b3b2bf4f2bb68232e59576d9d1",
-              "style": "IPY_MODEL_2a21b25f481843d4becc0fbe23a9fe5c",
-              "tooltip": ""
-            }
-          },
-          "abd62ca7ee444b35a51504b354b4f0d2": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": null,
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": null
-            }
-          },
-          "831e9824f5ea47c5aa397b065d564a34": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "891211e9cc6e4220bd9f65664f78bde6": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "55748705a62844f7b51b164dcf1b504a": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "fb10eafcd33a4375870f1210d4b9a8e8": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "c52987f9ac854b4eb7e908769c4cb6c6": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "424d2ccc746643368345cbd2d88535e6": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "b014bb0533ec4a6782a10d3d55ca44f7": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "9047826c5bad487ebb96f9f3cd03e88a": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "3e7844b3b2bf4f2bb68232e59576d9d1": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "2a21b25f481843d4becc0fbe23a9fe5c": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "ce002d2807a9466cbc56c4abdd0414c1": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "primary",
-              "description": "➡️ Next Round",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_6d27ae419d28419b8abbe5868ceb8b46",
-              "style": "IPY_MODEL_375ba687ce104697b27d139b7ce16382",
-              "tooltip": ""
-            }
-          },
-          "6d27ae419d28419b8abbe5868ceb8b46": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "200px"
-            }
-          },
-          "375ba687ce104697b27d139b7ce16382": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "fd7709e570784529a9e43eb7c08ef5b2": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "HBoxModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "HBoxModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "HBoxView",
-              "box_style": "",
-              "children": [
-                "IPY_MODEL_31b697107d4c479992a72284c2945c2e",
-                "IPY_MODEL_c8637b6b11fa475fbe6c4d454cb776ac",
-                "IPY_MODEL_252260e8fe334dd0888f4fcb1c0b15dc",
-                "IPY_MODEL_79738666eb1c4a8aa55562c5ec217e1b",
-                "IPY_MODEL_a3d19c69b8494dec91b582dd77856656"
-              ],
-              "layout": "IPY_MODEL_be303d3afeae4b24a0fb92a1fdaace80"
-            }
-          },
-          "31b697107d4c479992a72284c2945c2e": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "Under 20%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_a9ee645e2b68462880720f242dadcc72",
-              "style": "IPY_MODEL_200236b0b41d437f9886967e7a87c8d8",
-              "tooltip": ""
-            }
-          },
-          "c8637b6b11fa475fbe6c4d454cb776ac": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "20–40%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_4e8fcd60aa824fd6a7b1fd407856c2ea",
-              "style": "IPY_MODEL_623c153e0b9249028bfc00c30d878c65",
-              "tooltip": ""
-            }
-          },
-          "252260e8fe334dd0888f4fcb1c0b15dc": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "40–60%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_498e52a7a9c345e0834d5dd8c53b5405",
-              "style": "IPY_MODEL_07129e0fb60345fcaa8f52b111d8ebb5",
-              "tooltip": ""
-            }
-          },
-          "79738666eb1c4a8aa55562c5ec217e1b": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "60–80%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_bf6357dc91b042c5815285bb609e834b",
-              "style": "IPY_MODEL_2ffd51a1539f4c33a51c3ddfc7f89e84",
-              "tooltip": ""
-            }
-          },
-          "a3d19c69b8494dec91b582dd77856656": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "Over 80%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_765efcd2f11047dbb3b4b59caddfbee7",
-              "style": "IPY_MODEL_c2549729dc364b11af7951c027ea6876",
-              "tooltip": ""
-            }
-          },
-          "be303d3afeae4b24a0fb92a1fdaace80": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": null,
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": null
-            }
-          },
-          "a9ee645e2b68462880720f242dadcc72": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "200236b0b41d437f9886967e7a87c8d8": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "4e8fcd60aa824fd6a7b1fd407856c2ea": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "623c153e0b9249028bfc00c30d878c65": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "498e52a7a9c345e0834d5dd8c53b5405": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "07129e0fb60345fcaa8f52b111d8ebb5": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "bf6357dc91b042c5815285bb609e834b": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "2ffd51a1539f4c33a51c3ddfc7f89e84": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "765efcd2f11047dbb3b4b59caddfbee7": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "c2549729dc364b11af7951c027ea6876": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "a0591f2137874f56acac6cd9ae796e49": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "primary",
-              "description": "➡️ Next Round",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_7d3f24a926a646a097d9a848a711016d",
-              "style": "IPY_MODEL_649fb9f0a61f474d83bd7335090861e5",
-              "tooltip": ""
-            }
-          },
-          "7d3f24a926a646a097d9a848a711016d": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "200px"
-            }
-          },
-          "649fb9f0a61f474d83bd7335090861e5": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "330709466c3b43a18546e877084132ff": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "HBoxModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "HBoxModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "HBoxView",
-              "box_style": "",
-              "children": [
-                "IPY_MODEL_068a1468356f43a386d3375b55fb4059",
-                "IPY_MODEL_eb654519279d4493a1d3bd351d9d541a",
-                "IPY_MODEL_5bbbd27b58c34736bccdb808c7e3a500",
-                "IPY_MODEL_b924259701ee455fb259391fe6f70702",
-                "IPY_MODEL_57696060265e49acaee07ff644f49dce"
-              ],
-              "layout": "IPY_MODEL_3e91c00250c742619e76a28fe36e79bb"
-            }
-          },
-          "068a1468356f43a386d3375b55fb4059": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "Under 20%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_f49e7ee72dd749f0a140a70175f92543",
-              "style": "IPY_MODEL_f685b7aeb5254356b23009a78cfb8eb6",
-              "tooltip": ""
-            }
-          },
-          "eb654519279d4493a1d3bd351d9d541a": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "20–40%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_b2a91ac0c947447490e0170e2c525197",
-              "style": "IPY_MODEL_9f81b4e97c994079a69e3962fbe57fee",
-              "tooltip": ""
-            }
-          },
-          "5bbbd27b58c34736bccdb808c7e3a500": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "40–60%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_af9d209b2f9b4f9c801beeacb9fac25e",
-              "style": "IPY_MODEL_125802b6095a4afdbf57540cb517a39c",
-              "tooltip": ""
-            }
-          },
-          "b924259701ee455fb259391fe6f70702": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "60–80%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_276cf21f2321463caa928b51143cc097",
-              "style": "IPY_MODEL_61a79e961eba457ca3e72d0f3b7a57b5",
-              "tooltip": ""
-            }
-          },
-          "57696060265e49acaee07ff644f49dce": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "Over 80%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_5d2e2247ac6f4180b78a29c2f114dbb3",
-              "style": "IPY_MODEL_652fc4f92684463c84c49062af83e036",
-              "tooltip": ""
-            }
-          },
-          "3e91c00250c742619e76a28fe36e79bb": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": null,
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": null
-            }
-          },
-          "f49e7ee72dd749f0a140a70175f92543": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "f685b7aeb5254356b23009a78cfb8eb6": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "b2a91ac0c947447490e0170e2c525197": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "9f81b4e97c994079a69e3962fbe57fee": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "af9d209b2f9b4f9c801beeacb9fac25e": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "125802b6095a4afdbf57540cb517a39c": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "276cf21f2321463caa928b51143cc097": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "61a79e961eba457ca3e72d0f3b7a57b5": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "5d2e2247ac6f4180b78a29c2f114dbb3": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "652fc4f92684463c84c49062af83e036": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "71248299c4864ae186bb24130e7a9f5c": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "primary",
-              "description": "➡️ Next Round",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_0be017d4435d4d11b91fd812c5867c76",
-              "style": "IPY_MODEL_15a2d4179dc64769b26a5503184979a4",
-              "tooltip": ""
-            }
-          },
-          "0be017d4435d4d11b91fd812c5867c76": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "200px"
-            }
-          },
-          "15a2d4179dc64769b26a5503184979a4": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "fa4af6162156470c8213d696bbb8c42a": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "HBoxModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "HBoxModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "HBoxView",
-              "box_style": "",
-              "children": [
-                "IPY_MODEL_bffea2304bf84c50b44f9e6864d8868c",
-                "IPY_MODEL_9af6f670dc214ed795bd2d1fb5cb78ab",
-                "IPY_MODEL_601e4545900f4475971656dba6baac29",
-                "IPY_MODEL_9e1621536452415582bf23d12c00c689",
-                "IPY_MODEL_0c06415d00be40d59d74b305f93d90f3"
-              ],
-              "layout": "IPY_MODEL_365580cb966544ad8f39116746ed9f9a"
-            }
-          },
-          "bffea2304bf84c50b44f9e6864d8868c": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "Under 20%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_4c8a6a53fbfa4d98997cf45eebc96b0d",
-              "style": "IPY_MODEL_fe8514e8acfb42b0b57ba16513227c5a",
-              "tooltip": ""
-            }
-          },
-          "9af6f670dc214ed795bd2d1fb5cb78ab": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "20–40%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_b6aec9d8eeb94836ac960ecfb43a818a",
-              "style": "IPY_MODEL_15fdc494dc574afead180651a395dec2",
-              "tooltip": ""
-            }
-          },
-          "601e4545900f4475971656dba6baac29": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "40–60%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_93d60ba6a1ec426b8130119466d30bec",
-              "style": "IPY_MODEL_b5c00a9e2d734d118643b5616dda23bb",
-              "tooltip": ""
-            }
-          },
-          "9e1621536452415582bf23d12c00c689": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "60–80%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_38455fc92e42422a90eadaae671a3682",
-              "style": "IPY_MODEL_50c29944b3374ec3bb1012665d59b451",
-              "tooltip": ""
-            }
-          },
-          "0c06415d00be40d59d74b305f93d90f3": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "Over 80%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_64604961bcd24c2dacb43d08c31ced9d",
-              "style": "IPY_MODEL_6a450bc09f244facb050d273692aa67a",
-              "tooltip": ""
-            }
-          },
-          "365580cb966544ad8f39116746ed9f9a": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": null,
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": null
-            }
-          },
-          "4c8a6a53fbfa4d98997cf45eebc96b0d": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "fe8514e8acfb42b0b57ba16513227c5a": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "b6aec9d8eeb94836ac960ecfb43a818a": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "15fdc494dc574afead180651a395dec2": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "93d60ba6a1ec426b8130119466d30bec": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "b5c00a9e2d734d118643b5616dda23bb": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "38455fc92e42422a90eadaae671a3682": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "50c29944b3374ec3bb1012665d59b451": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "64604961bcd24c2dacb43d08c31ced9d": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "6a450bc09f244facb050d273692aa67a": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "f48a04cb01d2450e9f3b55dd8219516d": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "primary",
-              "description": "➡️ Next Round",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_c02a4d736b8d4c24a1924c7c061fcf7f",
-              "style": "IPY_MODEL_160488668630471ba0681d53c1822afd",
-              "tooltip": ""
-            }
-          },
-          "c02a4d736b8d4c24a1924c7c061fcf7f": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "200px"
-            }
-          },
-          "160488668630471ba0681d53c1822afd": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "84a21b552de0442198a777209abc2de9": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "HBoxModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "HBoxModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "HBoxView",
-              "box_style": "",
-              "children": [
-                "IPY_MODEL_b1d9e6ee5a484c00b5df313e3fdc62ab",
-                "IPY_MODEL_179a5198ddf34b6bb44708b6733260e9",
-                "IPY_MODEL_8fae96a6f73841008761d3701a04e084",
-                "IPY_MODEL_a413e408614749459c7fd24945540402",
-                "IPY_MODEL_c594ada6cfd64223bd527b8f8982b99c"
-              ],
-              "layout": "IPY_MODEL_7bcedb2bb2084aa28be0cd8350285a80"
-            }
-          },
-          "b1d9e6ee5a484c00b5df313e3fdc62ab": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "Under 20%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_391a0a64554a4913a4db2ae7ce488e8e",
-              "style": "IPY_MODEL_c190d55c50754a7d90b4e6def95fef92",
-              "tooltip": ""
-            }
-          },
-          "179a5198ddf34b6bb44708b6733260e9": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "20–40%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_a2834ed082ab43bfaf6d1ad85cfdef54",
-              "style": "IPY_MODEL_baedc577984747d4a39b4d0384bf3163",
-              "tooltip": ""
-            }
-          },
-          "8fae96a6f73841008761d3701a04e084": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "40–60%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_98a07d501afe4c86bc55d26c23eb2e80",
-              "style": "IPY_MODEL_d46f073913a74b7dad4aee1528b901b0",
-              "tooltip": ""
-            }
-          },
-          "a413e408614749459c7fd24945540402": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "60–80%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_b3de97ce2f274b699311b814bf02c17d",
-              "style": "IPY_MODEL_3a58449190d24fd5a0bae2ad2c21e057",
-              "tooltip": ""
-            }
-          },
-          "c594ada6cfd64223bd527b8f8982b99c": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_dom_classes": [],
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/controls",
-              "_view_module_version": "1.5.0",
-              "_view_name": "ButtonView",
-              "button_style": "",
-              "description": "Over 80%",
-              "disabled": false,
-              "icon": "",
-              "layout": "IPY_MODEL_8626acf5d3434c14b1cf0c8de0072938",
-              "style": "IPY_MODEL_a604aa166fdd4cfa9e104a2f84da9544",
-              "tooltip": ""
-            }
-          },
-          "7bcedb2bb2084aa28be0cd8350285a80": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": null,
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": null
-            }
-          },
-          "391a0a64554a4913a4db2ae7ce488e8e": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "c190d55c50754a7d90b4e6def95fef92": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "a2834ed082ab43bfaf6d1ad85cfdef54": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "baedc577984747d4a39b4d0384bf3163": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "98a07d501afe4c86bc55d26c23eb2e80": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "d46f073913a74b7dad4aee1528b901b0": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "b3de97ce2f274b699311b814bf02c17d": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "3a58449190d24fd5a0bae2ad2c21e057": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          },
-          "8626acf5d3434c14b1cf0c8de0072938": {
-            "model_module": "@jupyter-widgets/base",
-            "model_name": "LayoutModel",
-            "model_module_version": "1.2.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/base",
-              "_model_module_version": "1.2.0",
-              "_model_name": "LayoutModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "LayoutView",
-              "align_content": null,
-              "align_items": null,
-              "align_self": null,
-              "border": null,
-              "bottom": null,
-              "display": null,
-              "flex": null,
-              "flex_flow": null,
-              "grid_area": null,
-              "grid_auto_columns": null,
-              "grid_auto_flow": null,
-              "grid_auto_rows": null,
-              "grid_column": null,
-              "grid_gap": null,
-              "grid_row": null,
-              "grid_template_areas": null,
-              "grid_template_columns": null,
-              "grid_template_rows": null,
-              "height": "45px",
-              "justify_content": null,
-              "justify_items": null,
-              "left": null,
-              "margin": null,
-              "max_height": null,
-              "max_width": null,
-              "min_height": null,
-              "min_width": null,
-              "object_fit": null,
-              "object_position": null,
-              "order": null,
-              "overflow": null,
-              "overflow_x": null,
-              "overflow_y": null,
-              "padding": null,
-              "right": null,
-              "top": null,
-              "visibility": null,
-              "width": "180px"
-            }
-          },
-          "a604aa166fdd4cfa9e104a2f84da9544": {
-            "model_module": "@jupyter-widgets/controls",
-            "model_name": "ButtonStyleModel",
-            "model_module_version": "1.5.0",
-            "state": {
-              "_model_module": "@jupyter-widgets/controls",
-              "_model_module_version": "1.5.0",
-              "_model_name": "ButtonStyleModel",
-              "_view_count": null,
-              "_view_module": "@jupyter-widgets/base",
-              "_view_module_version": "1.2.0",
-              "_view_name": "StyleView",
-              "button_color": null,
-              "font_weight": ""
-            }
-          }
-        }
-      }
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "code",
-      "execution_count": 3,
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 639,
-          "referenced_widgets": [
-            "236d636f61e94d6c85c8cf3e0a85762f",
-            "e41654a1efcc430bb8442d591a7e22fc",
-            "bae4e70f169948a6b7e968671d6f653b",
-            "34f2a7f71e7a407bb38dd2927699cce1",
-            "028d519999ec4792af88faaec8f1c4f9",
-            "afc1b80d05e64debba0f0dc92e72416a",
-            "db4a55ea9eaa45d29b066d3ebc7866a7",
-            "8f0f7a982eb94f8ab14f650d5facbfd6",
-            "75958da7e6b54fe39395e79a03d20a5f",
-            "03f99ceebfc04108a2e93ea514180150",
-            "5ad88ccb85a94f84bdd068af74b9218b",
-            "8dc7b48068f94c2d9351534f233eafc1",
-            "30d9cfd9e50c41af8eb19707813fd072",
-            "f28660bc6f444e3cb8b0caed201aae9b",
-            "5773203d5ae44e58b32f7098755ce88e",
-            "2f95150ae5ab47528e5d97f4237b6c52",
-            "3f7e4905b05e4d17b62f03b15f945164",
-            "abd62ca7ee444b35a51504b354b4f0d2",
-            "831e9824f5ea47c5aa397b065d564a34",
-            "891211e9cc6e4220bd9f65664f78bde6",
-            "55748705a62844f7b51b164dcf1b504a",
-            "fb10eafcd33a4375870f1210d4b9a8e8",
-            "c52987f9ac854b4eb7e908769c4cb6c6",
-            "424d2ccc746643368345cbd2d88535e6",
-            "b014bb0533ec4a6782a10d3d55ca44f7",
-            "9047826c5bad487ebb96f9f3cd03e88a",
-            "3e7844b3b2bf4f2bb68232e59576d9d1",
-            "2a21b25f481843d4becc0fbe23a9fe5c",
-            "ce002d2807a9466cbc56c4abdd0414c1",
-            "6d27ae419d28419b8abbe5868ceb8b46",
-            "375ba687ce104697b27d139b7ce16382",
-            "fd7709e570784529a9e43eb7c08ef5b2",
-            "31b697107d4c479992a72284c2945c2e",
-            "c8637b6b11fa475fbe6c4d454cb776ac",
-            "252260e8fe334dd0888f4fcb1c0b15dc",
-            "79738666eb1c4a8aa55562c5ec217e1b",
-            "a3d19c69b8494dec91b582dd77856656",
-            "be303d3afeae4b24a0fb92a1fdaace80",
-            "a9ee645e2b68462880720f242dadcc72",
-            "200236b0b41d437f9886967e7a87c8d8",
-            "4e8fcd60aa824fd6a7b1fd407856c2ea",
-            "623c153e0b9249028bfc00c30d878c65",
-            "498e52a7a9c345e0834d5dd8c53b5405",
-            "07129e0fb60345fcaa8f52b111d8ebb5",
-            "bf6357dc91b042c5815285bb609e834b",
-            "2ffd51a1539f4c33a51c3ddfc7f89e84",
-            "765efcd2f11047dbb3b4b59caddfbee7",
-            "c2549729dc364b11af7951c027ea6876",
-            "a0591f2137874f56acac6cd9ae796e49",
-            "7d3f24a926a646a097d9a848a711016d",
-            "649fb9f0a61f474d83bd7335090861e5",
-            "330709466c3b43a18546e877084132ff",
-            "068a1468356f43a386d3375b55fb4059",
-            "eb654519279d4493a1d3bd351d9d541a",
-            "5bbbd27b58c34736bccdb808c7e3a500",
-            "b924259701ee455fb259391fe6f70702",
-            "57696060265e49acaee07ff644f49dce",
-            "3e91c00250c742619e76a28fe36e79bb",
-            "f49e7ee72dd749f0a140a70175f92543",
-            "f685b7aeb5254356b23009a78cfb8eb6",
-            "b2a91ac0c947447490e0170e2c525197",
-            "9f81b4e97c994079a69e3962fbe57fee",
-            "af9d209b2f9b4f9c801beeacb9fac25e",
-            "125802b6095a4afdbf57540cb517a39c",
-            "276cf21f2321463caa928b51143cc097",
-            "61a79e961eba457ca3e72d0f3b7a57b5",
-            "5d2e2247ac6f4180b78a29c2f114dbb3",
-            "652fc4f92684463c84c49062af83e036",
-            "71248299c4864ae186bb24130e7a9f5c",
-            "0be017d4435d4d11b91fd812c5867c76",
-            "15a2d4179dc64769b26a5503184979a4",
-            "fa4af6162156470c8213d696bbb8c42a",
-            "bffea2304bf84c50b44f9e6864d8868c",
-            "9af6f670dc214ed795bd2d1fb5cb78ab",
-            "601e4545900f4475971656dba6baac29",
-            "9e1621536452415582bf23d12c00c689",
-            "0c06415d00be40d59d74b305f93d90f3",
-            "365580cb966544ad8f39116746ed9f9a",
-            "4c8a6a53fbfa4d98997cf45eebc96b0d",
-            "fe8514e8acfb42b0b57ba16513227c5a",
-            "b6aec9d8eeb94836ac960ecfb43a818a",
-            "15fdc494dc574afead180651a395dec2",
-            "93d60ba6a1ec426b8130119466d30bec",
-            "b5c00a9e2d734d118643b5616dda23bb",
-            "38455fc92e42422a90eadaae671a3682",
-            "50c29944b3374ec3bb1012665d59b451",
-            "64604961bcd24c2dacb43d08c31ced9d",
-            "6a450bc09f244facb050d273692aa67a",
-            "f48a04cb01d2450e9f3b55dd8219516d",
-            "c02a4d736b8d4c24a1924c7c061fcf7f",
-            "160488668630471ba0681d53c1822afd",
-            "84a21b552de0442198a777209abc2de9",
-            "b1d9e6ee5a484c00b5df313e3fdc62ab",
-            "179a5198ddf34b6bb44708b6733260e9",
-            "8fae96a6f73841008761d3701a04e084",
-            "a413e408614749459c7fd24945540402",
-            "c594ada6cfd64223bd527b8f8982b99c",
-            "7bcedb2bb2084aa28be0cd8350285a80",
-            "391a0a64554a4913a4db2ae7ce488e8e",
-            "c190d55c50754a7d90b4e6def95fef92",
-            "a2834ed082ab43bfaf6d1ad85cfdef54",
-            "baedc577984747d4a39b4d0384bf3163",
-            "98a07d501afe4c86bc55d26c23eb2e80",
-            "d46f073913a74b7dad4aee1528b901b0",
-            "b3de97ce2f274b699311b814bf02c17d",
-            "3a58449190d24fd5a0bae2ad2c21e057",
-            "8626acf5d3434c14b1cf0c8de0072938",
-            "a604aa166fdd4cfa9e104a2f84da9544"
-          ]
-        },
-        "id": "9Ili_SBKqCJf",
-        "outputId": "9ade5e21-6327-4978-8b9d-390c0874e678"
-      },
-      "outputs": [
-        {
-          "output_type": "display_data",
-          "data": {
-            "text/plain": [
-              "<IPython.core.display.HTML object>"
-            ],
-            "text/html": [
-              "\n",
-              "<div style=\"\n",
-              "    background: linear-gradient(135deg, #182848, #4b6cb7);\n",
-              "    color: white;\n",
-              "    padding: 25px;\n",
-              "    border-radius: 15px;\n",
-              "    text-align: center;\n",
-              "    margin-bottom: 20px;\n",
-              "\">\n",
-              "    <h1>🎓 UC Admissions Challenge</h1>\n",
-              "    <p style=\"font-size:18px;\">\n",
-              "        Can you guess the historical UC freshman admission rate?\n",
-              "    </p>\n",
-              "    <p>\n",
-              "        Fall 2025 • California public high schools\n",
-              "    </p>\n",
-              "</div>\n"
-            ]
-          },
-          "metadata": {}
-        },
-        {
-          "output_type": "display_data",
-          "data": {
-            "text/plain": [
-              "Dropdown(description='County:', layout=Layout(width='400px'), options=('Alameda', 'Contra Costa', 'Marin', 'Na…"
-            ],
-            "application/vnd.jupyter.widget-view+json": {
-              "version_major": 2,
-              "version_minor": 0,
-              "model_id": "236d636f61e94d6c85c8cf3e0a85762f"
-            }
-          },
-          "metadata": {}
-        },
-        {
-          "output_type": "display_data",
-          "data": {
-            "text/plain": [
-              "Dropdown(description='UC campus:', layout=Layout(width='400px'), options=('Berkeley', 'Davis', 'Irvine', 'Los …"
-            ],
-            "application/vnd.jupyter.widget-view+json": {
-              "version_major": 2,
-              "version_minor": 0,
-              "model_id": "34f2a7f71e7a407bb38dd2927699cce1"
-            }
-          },
-          "metadata": {}
-        },
-        {
-          "output_type": "display_data",
-          "data": {
-            "text/plain": [
-              "Button(button_style='primary', description='🎮 Start Game', layout=Layout(height='40px', width='200px'), style=…"
-            ],
-            "application/vnd.jupyter.widget-view+json": {
-              "version_major": 2,
-              "version_minor": 0,
-              "model_id": "db4a55ea9eaa45d29b066d3ebc7866a7"
-            }
-          },
-          "metadata": {}
-        },
-        {
-          "output_type": "display_data",
-          "data": {
-            "text/plain": [
-              "Output()"
-            ],
-            "application/vnd.jupyter.widget-view+json": {
-              "version_major": 2,
-              "version_minor": 0,
-              "model_id": "03f99ceebfc04108a2e93ea514180150"
-            }
-          },
-          "metadata": {}
-        }
-      ],
-      "source": [
-        "# ============================================================\n",
-        "# UC ADMISSIONS CHALLENGE\n",
-        "# Fall 2025 UC Freshman Admissions\n",
-        "# ============================================================\n",
-        "\n",
-        "import pandas as pd\n",
-        "import random\n",
-        "import ipywidgets as widgets\n",
-        "from IPython.display import display, HTML, clear_output\n",
-        "\n",
-        "# ------------------------------------------------------------\n",
-        "# 1. LOAD THE DATA\n",
-        "# ------------------------------------------------------------\n",
-        "\n",
-        "df = pd.read_csv(\"dashboard_data.csv\")\n",
-        "\n",
-        "# ------------------------------------------------------------\n",
-        "# 2. FILTER TO OUR RESEARCH POPULATION\n",
-        "# ------------------------------------------------------------\n",
-        "\n",
-        "data = df[\n",
-        "    (df[\"fall_term\"] == 2025) &\n",
-        "    (df[\"school_type\"] == \"High Schools (Public)\") &\n",
-        "    (df[\"campus\"] != \"Universitywide\")\n",
-        "].copy()\n",
-        "\n",
-        "# Remove rows without the necessary information\n",
-        "data = data.dropna(subset=[\"county\", \"campus\", \"applicants\", \"admits\"])\n",
-        "\n",
-        "# ------------------------------------------------------------\n",
-        "# 3. CALCULATE ADMISSION RATES\n",
-        "# ------------------------------------------------------------\n",
-        "\n",
-        "# We calculate the rate from total applicants and admits.\n",
-        "# This is better than simply averaging individual school rates.\n",
-        "\n",
-        "summary = (\n",
-        "    data.groupby([\"county\", \"campus\"])\n",
-        "    .agg(\n",
-        "        applicants=(\"applicants\", \"sum\"),\n",
-        "        admits=(\"admits\", \"sum\"),\n",
-        "        schools=(\"high_school\", \"nunique\")\n",
-        "    )\n",
-        "    .reset_index()\n",
-        ")\n",
-        "\n",
-        "summary[\"admission_rate\"] = (\n",
-        "    summary[\"admits\"] / summary[\"applicants\"] * 100\n",
-        ")\n",
-        "\n",
-        "# ------------------------------------------------------------\n",
-        "# 4. SET UP THE GAME\n",
-        "# ------------------------------------------------------------\n",
-        "\n",
-        "counties = sorted(summary[\"county\"].unique())\n",
-        "campuses = sorted(summary[\"campus\"].unique())\n",
-        "\n",
-        "score = 0\n",
-        "round_number = 0\n",
-        "total_rounds = 5\n",
-        "\n",
-        "current_answer = None\n",
-        "\n",
-        "# ------------------------------------------------------------\n",
-        "# 5. TITLE\n",
-        "# ------------------------------------------------------------\n",
-        "\n",
-        "display(HTML(\"\"\"\n",
-        "<div style=\"\n",
-        "    background: linear-gradient(135deg, #182848, #4b6cb7);\n",
-        "    color: white;\n",
-        "    padding: 25px;\n",
-        "    border-radius: 15px;\n",
-        "    text-align: center;\n",
-        "    margin-bottom: 20px;\n",
-        "\">\n",
-        "    <h1>🎓 UC Admissions Challenge</h1>\n",
-        "    <p style=\"font-size:18px;\">\n",
-        "        Can you guess the historical UC freshman admission rate?\n",
-        "    </p>\n",
-        "    <p>\n",
-        "        Fall 2025 • California public high schools\n",
-        "    </p>\n",
-        "</div>\n",
-        "\"\"\"))\n",
-        "\n",
-        "# ------------------------------------------------------------\n",
-        "# 6. GAME CONTROLS\n",
-        "# ------------------------------------------------------------\n",
-        "\n",
-        "county_dropdown = widgets.Dropdown(\n",
-        "    options=counties,\n",
-        "    description=\"County:\",\n",
-        "    style={\"description_width\": \"initial\"},\n",
-        "    layout=widgets.Layout(width=\"400px\")\n",
-        ")\n",
-        "\n",
-        "campus_dropdown = widgets.Dropdown(\n",
-        "    options=campuses,\n",
-        "    description=\"UC campus:\",\n",
-        "    style={\"description_width\": \"initial\"},\n",
-        "    layout=widgets.Layout(width=\"400px\")\n",
-        ")\n",
-        "\n",
-        "start_button = widgets.Button(\n",
-        "    description=\"🎮 Start Game\",\n",
-        "    button_style=\"primary\",\n",
-        "    layout=widgets.Layout(width=\"200px\", height=\"40px\")\n",
-        ")\n",
-        "\n",
-        "display(county_dropdown)\n",
-        "display(campus_dropdown)\n",
-        "display(start_button)\n",
-        "\n",
-        "game_output = widgets.Output()\n",
-        "display(game_output)\n",
-        "\n",
-        "# ------------------------------------------------------------\n",
-        "# 7. GAME LOGIC\n",
-        "# ------------------------------------------------------------\n",
-        "\n",
-        "def get_rate_range(rate):\n",
-        "\n",
-        "    if rate < 20:\n",
-        "        return \"Under 20%\"\n",
-        "    elif rate < 40:\n",
-        "        return \"20–40%\"\n",
-        "    elif rate < 60:\n",
-        "        return \"40–60%\"\n",
-        "    elif rate < 80:\n",
-        "        return \"60–80%\"\n",
-        "    else:\n",
-        "        return \"Over 80%\"\n",
-        "\n",
-        "\n",
-        "def start_game(button):\n",
-        "\n",
-        "    global score, round_number\n",
-        "\n",
-        "    score = 0\n",
-        "    round_number = 0\n",
-        "\n",
-        "    with game_output:\n",
-        "        clear_output()\n",
-        "\n",
-        "        display(HTML(\"\"\"\n",
-        "        <h2>🎮 Game started!</h2>\n",
-        "        <p>\n",
-        "        Choose a county and UC campus, then try to predict\n",
-        "        the historical admission-rate range.\n",
-        "        </p>\n",
-        "        \"\"\"))\n",
-        "\n",
-        "        next_round()\n",
-        "\n",
-        "\n",
-        "def next_round():\n",
-        "\n",
-        "    global round_number, current_answer\n",
-        "\n",
-        "    round_number += 1\n",
-        "\n",
-        "    if round_number > total_rounds:\n",
-        "        show_final_score()\n",
-        "        return\n",
-        "\n",
-        "    # Randomly select a valid county/campus combination\n",
-        "    row = summary.sample(1).iloc[0]\n",
-        "\n",
-        "    county = row[\"county\"]\n",
-        "    campus = row[\"campus\"]\n",
-        "    applicants = int(row[\"applicants\"])\n",
-        "    admits = int(row[\"admits\"])\n",
-        "    rate = row[\"admission_rate\"]\n",
-        "\n",
-        "    current_answer = {\n",
-        "        \"county\": county,\n",
-        "        \"campus\": campus,\n",
-        "        \"applicants\": applicants,\n",
-        "        \"admits\": admits,\n",
-        "        \"rate\": rate,\n",
-        "        \"range\": get_rate_range(rate)\n",
-        "    }\n",
-        "\n",
-        "    with game_output:\n",
-        "        clear_output()\n",
-        "\n",
-        "        display(HTML(f\"\"\"\n",
-        "        <div style=\"\n",
-        "            padding:20px;\n",
-        "            border-radius:12px;\n",
-        "            background:#f5f5f5;\n",
-        "            margin-bottom:15px;\n",
-        "        \">\n",
-        "            <h2>Round {round_number} of {total_rounds}</h2>\n",
-        "\n",
-        "            <h3>📍 County</h3>\n",
-        "            <p style=\"font-size:22px;\"><b>{county}</b></p>\n",
-        "\n",
-        "            <h3>🎓 UC Campus</h3>\n",
-        "            <p style=\"font-size:22px;\"><b>UC {campus}</b></p>\n",
-        "\n",
-        "            <hr>\n",
-        "\n",
-        "            <h3>🤔 What do you think the historical admission rate was?</h3>\n",
-        "        </div>\n",
-        "        \"\"\"))\n",
-        "\n",
-        "        # Guess buttons\n",
-        "        buttons = []\n",
-        "\n",
-        "        ranges = [\n",
-        "            \"Under 20%\",\n",
-        "            \"20–40%\",\n",
-        "            \"40–60%\",\n",
-        "            \"60–80%\",\n",
-        "            \"Over 80%\"\n",
-        "        ]\n",
-        "\n",
-        "        for r in ranges:\n",
-        "\n",
-        "            b = widgets.Button(\n",
-        "                description=r,\n",
-        "                layout=widgets.Layout(\n",
-        "                    width=\"180px\",\n",
-        "                    height=\"45px\"\n",
-        "                )\n",
-        "            )\n",
-        "\n",
-        "            b.on_click(lambda btn, guess=r: check_answer(guess))\n",
-        "\n",
-        "            buttons.append(b)\n",
-        "\n",
-        "        display(widgets.HBox(buttons))\n",
-        "\n",
-        "\n",
-        "def check_answer(guess):\n",
-        "\n",
-        "    global score\n",
-        "\n",
-        "    correct = current_answer[\"range\"]\n",
-        "\n",
-        "    with game_output:\n",
-        "        clear_output()\n",
-        "\n",
-        "        if guess == correct:\n",
-        "            score += 1\n",
-        "\n",
-        "            result = \"\"\"\n",
-        "            <h2>🎉 Correct!</h2>\n",
-        "            <p style=\"font-size:20px;\">\n",
-        "                You got the admission-rate range right!\n",
-        "            </p>\n",
-        "            \"\"\"\n",
-        "\n",
-        "        else:\n",
-        "\n",
-        "            result = f\"\"\"\n",
-        "            <h2>❌ Not quite!</h2>\n",
-        "            <p style=\"font-size:20px;\">\n",
-        "                You guessed <b>{guess}</b>.\n",
-        "            </p>\n",
-        "            <p>\n",
-        "                The correct range was <b>{correct}</b>.\n",
-        "            </p>\n",
-        "            \"\"\"\n",
-        "\n",
-        "        rate = current_answer[\"rate\"]\n",
-        "\n",
-        "        display(HTML(f\"\"\"\n",
-        "        <div style=\"\n",
-        "            padding:20px;\n",
-        "            border-radius:12px;\n",
-        "            background:#f5f5f5;\n",
-        "        \">\n",
-        "\n",
-        "            {result}\n",
-        "\n",
-        "            <hr>\n",
-        "\n",
-        "            <h2>📊 The actual data</h2>\n",
-        "\n",
-        "            <p style=\"font-size:32px;\">\n",
-        "                <b>{rate:.1f}%</b>\n",
-        "            </p>\n",
-        "\n",
-        "            <p>\n",
-        "                Historical freshman admission rate\n",
-        "            </p>\n",
-        "\n",
-        "            <p>\n",
-        "                <b>{current_answer[\"admits\"]:,}</b>\n",
-        "                admitted out of\n",
-        "                <b>{current_answer[\"applicants\"]:,}</b>\n",
-        "                applicants.\n",
-        "            </p>\n",
-        "\n",
-        "            <p>\n",
-        "                This represents\n",
-        "                <b>{current_answer[\"county\"]}</b>\n",
-        "                applicants to\n",
-        "                <b>UC {current_answer[\"campus\"]}</b>\n",
-        "                in Fall 2025.\n",
-        "            </p>\n",
-        "\n",
-        "        </div>\n",
-        "        \"\"\"))\n",
-        "\n",
-        "        continue_button = widgets.Button(\n",
-        "            description=(\n",
-        "                \"🏆 See Final Score\"\n",
-        "                if round_number == total_rounds\n",
-        "                else \"➡️ Next Round\"\n",
-        "            ),\n",
-        "            button_style=\"primary\",\n",
-        "            layout=widgets.Layout(width=\"200px\", height=\"45px\")\n",
-        "        )\n",
-        "\n",
-        "        continue_button.on_click(lambda b: next_round())\n",
-        "\n",
-        "        display(continue_button)\n",
-        "\n",
-        "\n",
-        "def show_final_score():\n",
-        "\n",
-        "    with game_output:\n",
-        "        clear_output()\n",
-        "\n",
-        "        if score == 5:\n",
-        "            message = \"🔥 Perfect score! You're a UC admissions detective!\"\n",
-        "        elif score >= 3:\n",
-        "            message = \"👏 Nice work! You have a good sense of the data.\"\n",
-        "        else:\n",
-        "            message = \"🧠 Keep exploring! The data has some surprises.\"\n",
-        "\n",
-        "        display(HTML(f\"\"\"\n",
-        "        <div style=\"\n",
-        "            text-align:center;\n",
-        "            padding:35px;\n",
-        "            border-radius:15px;\n",
-        "            background:#f5f5f5;\n",
-        "        \">\n",
-        "\n",
-        "            <h1>🏆 Game Complete!</h1>\n",
-        "\n",
-        "            <h2 style=\"font-size:42px;\">\n",
-        "                {score} / {total_rounds}\n",
-        "            </h2>\n",
-        "\n",
-        "            <p style=\"font-size:22px;\">\n",
-        "                {message}\n",
-        "            </p>\n",
-        "\n",
-        "            <hr>\n",
-        "\n",
-        "            <h3>What did we investigate?</h3>\n",
-        "\n",
-        "            <p>\n",
-        "                We examined the freshman admission rate for\n",
-        "                applicants from California public high schools\n",
-        "                in Fall 2025.\n",
-        "            </p>\n",
-        "\n",
-        "            <p>\n",
-        "                We compared admission rates across\n",
-        "                <b>counties</b> and\n",
-        "                <b>UC campuses</b>.\n",
-        "            </p>\n",
-        "\n",
-        "        </div>\n",
-        "        \"\"\"))\n",
-        "\n",
-        "# ------------------------------------------------------------\n",
-        "# 8. START BUTTON\n",
-        "# ------------------------------------------------------------\n",
-        "\n",
-        "start_button.on_click(start_game)"
-      ]
-    }
-  ]
+# ============================================================
+# UC ADMISSIONS — FALL 2025
+# Interactive admission-rate challenge
+# ============================================================
+
+import pandas as pd
+import random
+import ipywidgets as widgets
+from IPython.display import display, HTML, clear_output
+
+
+# ------------------------------------------------------------
+# 1. LOAD THE DATA
+# ------------------------------------------------------------
+
+FILE_NAME = "dashboard_data(1).csv"
+
+df = pd.read_csv(FILE_NAME)
+
+
+# ------------------------------------------------------------
+# 2. FILTER THE DATA
+#
+# Population:
+# Freshman applicants from California public high schools
+# Time window:
+# Fall 2025
+# ------------------------------------------------------------
+
+data = df[
+    (df["fall_term"] == 2025) &
+    (df["school_type"] == "High Schools (Public)") &
+    (df["campus"] != "Universitywide")
+].copy()
+
+
+# Remove records where the variables needed for the analysis
+# are missing.
+
+data = data.dropna(
+    subset=["county", "campus", "applicants", "admits"]
+)
+
+
+# ------------------------------------------------------------
+# 3. AGGREGATE BY COUNTY + UC CAMPUS
+# ------------------------------------------------------------
+#
+# We add applicants and admits first, then calculate the rate.
+#
+# Admission rate =
+# total admits / total applicants
+#
+# This prevents a small school and a large school from
+# receiving the same weight.
+# ------------------------------------------------------------
+
+summary = (
+    data
+    .groupby(["county", "campus"], as_index=False)
+    .agg(
+        applicants=("applicants", "sum"),
+        admits=("admits", "sum"),
+        schools=("high_school", "nunique")
+    )
+)
+
+summary["admission_rate"] = (
+    summary["admits"] / summary["applicants"]
+)
+
+
+# ------------------------------------------------------------
+# 4. OVERALL FALL 2025 RATE
+# ------------------------------------------------------------
+
+overall_applicants = summary["applicants"].sum()
+overall_admits = summary["admits"].sum()
+
+overall_rate = overall_admits / overall_applicants
+
+
+# ------------------------------------------------------------
+# 5. OPTIONS FOR THE APP
+# ------------------------------------------------------------
+
+counties = sorted(summary["county"].unique())
+campuses = sorted(summary["campus"].unique())
+
+
+# ------------------------------------------------------------
+# 6. CSS / VISUAL DESIGN
+# ------------------------------------------------------------
+#
+# Simple, flat design rather than lots of cards, gradients,
+# emojis, and rounded UI elements.
+# ------------------------------------------------------------
+
+display(HTML("""
+<style>
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.uc-title {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    margin-bottom: 4px;
+}
+
+.uc-subtitle {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.uc-rule {
+    border: none;
+    border-top: 2px solid #222;
+    margin: 10px 0 25px 0;
+}
+
+.section-title {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.question {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    line-height: 1.3;
+    margin: 18px 0;
+}
+
+.big-number {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.small-label {
+    color: #666;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-row {
+    display: flex;
+    gap: 45px;
+    margin: 22px 0;
+}
+
+.stat-number {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.explanation {
+    border-left: 3px solid #222;
+    padding-left: 15px;
+    margin: 20px 0;
+    color: #444;
+    line-height: 1.5;
+}
+
+.correct {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.incorrect {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.progress {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+</style>
+"""))
+
+
+# ------------------------------------------------------------
+# 7. TITLE
+# ------------------------------------------------------------
+
+display(HTML("""
+<div class="uc-title">UC Admissions</div>
+
+<div class="uc-subtitle">
+    A Fall 2025 data challenge
+</div>
+
+<hr class="uc-rule">
+
+<div class="explanation">
+    How well can you estimate the historical freshman
+    admission rate for applicants from different California
+    counties applying to different UC campuses?
+</div>
+"""))
+
+
+# ------------------------------------------------------------
+# 8. COUNTY + CAMPUS SELECTION
+# ------------------------------------------------------------
+
+county_dropdown = widgets.Dropdown(
+    options=counties,
+    description="County",
+    layout=widgets.Layout(width="420px"),
+    style={"description_width": "100px"}
+)
+
+campus_dropdown = widgets.Dropdown(
+    options=campuses,
+    description="UC campus",
+    layout=widgets.Layout(width="420px"),
+    style={"description_width": "100px"}
+)
+
+start_button = widgets.Button(
+    description="Start challenge",
+    button_style="",
+    layout=widgets.Layout(width="180px", height="38px")
+)
+
+display(county_dropdown)
+display(campus_dropdown)
+display(start_button)
+
+
+# ------------------------------------------------------------
+# 9. GAME OUTPUT AREA
+# ------------------------------------------------------------
+
+game_output = widgets.Output()
+
+display(game_output)
+
+
+# ------------------------------------------------------------
+# 10. GAME VARIABLES
+# ------------------------------------------------------------
+
+score = 0
+round_number = 0
+total_rounds = 5
+
+current_data = None
+
+
+# ------------------------------------------------------------
+# 11. ADMISSION-RATE CATEGORIES
+# ------------------------------------------------------------
+
+rate_ranges = [
+    "Under 20%",
+    "20–40%",
+    "40–60%",
+    "60–80%",
+    "Over 80%"
+]
+
+
+def get_rate_range(rate):
+
+    rate = rate * 100
+
+    if rate < 20:
+        return "Under 20%"
+
+    elif rate < 40:
+        return "20–40%"
+
+    elif rate < 60:
+        return "40–60%"
+
+    elif rate < 80:
+        return "60–80%"
+
+    else:
+        return "Over 80%"
+
+
+# ------------------------------------------------------------
+# 12. START THE GAME
+# ------------------------------------------------------------
+
+def start_game(button):
+
+    global score
+    global round_number
+
+    score = 0
+    round_number = 0
+
+    next_round()
+
+
+# ------------------------------------------------------------
+# 13. START A NEW ROUND
+# ------------------------------------------------------------
+
+def next_round():
+
+    global round_number
+    global current_data
+
+    round_number += 1
+
+    # If all rounds are finished
+    if round_number > total_rounds:
+
+        show_final_score()
+        return
+
+
+    # --------------------------------------------------------
+    # Use the county + campus selected by the user.
+    # --------------------------------------------------------
+
+    selected_county = county_dropdown.value
+    selected_campus = campus_dropdown.value
+
+    match = summary[
+        (summary["county"] == selected_county) &
+        (summary["campus"] == selected_campus)
+    ]
+
+
+    # --------------------------------------------------------
+    # If there isn't enough information for that combination,
+    # choose a different valid combination.
+    # --------------------------------------------------------
+
+    if len(match) == 0:
+
+        valid_combinations = summary[
+            ["county", "campus"]
+        ].drop_duplicates()
+
+        random_choice = valid_combinations.sample(1).iloc[0]
+
+        selected_county = random_choice["county"]
+        selected_campus = random_choice["campus"]
+
+        county_dropdown.value = selected_county
+        campus_dropdown.value = selected_campus
+
+        match = summary[
+            (summary["county"] == selected_county) &
+            (summary["campus"] == selected_campus)
+        ]
+
+
+    current_data = match.iloc[0]
+
+
+    # --------------------------------------------------------
+    # Display the question
+    # --------------------------------------------------------
+
+    with game_output:
+
+        clear_output(wait=True)
+
+        display(HTML(f"""
+
+        <div class="progress">
+            ROUND {round_number} OF {total_rounds}
+        </div>
+
+        <div class="section-title">
+            Your estimate
+        </div>
+
+        <div class="question">
+
+            Applicants from <b>{current_data["county"]} County</b>
+            applied to <b>UC {current_data["campus"]}</b>.
+
+            <br><br>
+
+            What was the historical admission rate?
+
+        </div>
+
+        """))
+
+
+        # ----------------------------------------------------
+        # Guess buttons
+        # ----------------------------------------------------
+
+        buttons = []
+
+        for rate_range in rate_ranges:
+
+            button = widgets.Button(
+                description=rate_range,
+                layout=widgets.Layout(
+                    width="150px",
+                    height="40px"
+                )
+            )
+
+            button.on_click(
+                lambda b, guess=rate_range:
+                check_answer(guess)
+            )
+
+            buttons.append(button)
+
+
+        display(
+            widgets.HBox(
+                buttons,
+                layout=widgets.Layout(
+                    justify_content="center"
+                )
+            )
+        )
+
+
+# ------------------------------------------------------------
+# 14. CHECK THE PLAYER'S ANSWER
+# ------------------------------------------------------------
+
+def check_answer(guess):
+
+    global score
+
+    actual_rate = current_data["admission_rate"]
+
+    correct_range = get_rate_range(actual_rate)
+
+    if guess == correct_range:
+
+        score += 1
+        result_text = "Correct."
+        result_class = "correct"
+
+    else:
+
+        result_text = "Not quite."
+        result_class = "incorrect"
+
+
+    # --------------------------------------------------------
+    # Difference from overall rate
+    # --------------------------------------------------------
+
+    difference = (actual_rate - overall_rate) * 100
+
+    if difference > 0:
+
+        comparison = (
+            f"{difference:.1f} percentage points "
+            f"above the overall rate"
+        )
+
+    elif difference < 0:
+
+        comparison = (
+            f"{abs(difference):.1f} percentage points "
+            f"below the overall rate"
+        )
+
+    else:
+
+        comparison = "equal to the overall rate"
+
+
+    # --------------------------------------------------------
+    # Display answer
+    # --------------------------------------------------------
+
+    with game_output:
+
+        clear_output(wait=True)
+
+        display(HTML(f"""
+
+        <div class="progress">
+            ROUND {round_number} OF {total_rounds}
+        </div>
+
+        <div class="{result_class}">
+            {result_text}
+        </div>
+
+        <div class="section-title">
+            {current_data["county"]} County → UC {current_data["campus"]}
+        </div>
+
+        <div class="small-label">
+            Historical freshman admission rate
+        </div>
+
+        <div class="big-number">
+            {actual_rate * 100:.1f}%
+        </div>
+
+        <div class="stat-row">
+
+            <div>
+                <div class="small-label">Applicants</div>
+                <div class="stat-number">
+                    {int(current_data["applicants"]):,}
+                </div>
+            </div>
+
+            <div>
+                <div class="small-label">Admitted</div>
+                <div class="stat-number">
+                    {int(current_data["admits"]):,}
+                </div>
+            </div>
+
+            <div>
+                <div class="small-label">Schools represented</div>
+                <div class="stat-number">
+                    {int(current_data["schools"]):,}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="explanation">
+
+            Your guess: <b>{guess}</b><br>
+            Correct range: <b>{correct_range}</b><br><br>
+
+            The selected rate was
+            <b>{comparison}</b>.
+
+            The overall Fall 2025 rate in this analysis was
+            <b>{overall_rate * 100:.1f}%</b>.
+
+        </div>
+
+        """))
+
+
+        # ----------------------------------------------------
+        # Continue button
+        # ----------------------------------------------------
+
+        if round_number < total_rounds:
+
+            next_button = widgets.Button(
+                description="Next question",
+                layout=widgets.Layout(
+                    width="160px",
+                    height="38px"
+                )
+            )
+
+            next_button.on_click(
+                lambda b: next_round()
+            )
+
+            display(next_button)
+
+        else:
+
+            finish_button = widgets.Button(
+                description="See final score",
+                layout=widgets.Layout(
+                    width="160px",
+                    height="38px"
+                )
+            )
+
+            finish_button.on_click(
+                lambda b: show_final_score()
+            )
+
+            display(finish_button)
+
+
+# ------------------------------------------------------------
+# 15. FINAL SCORE
+# ------------------------------------------------------------
+
+def show_final_score():
+
+    with game_output:
+
+        clear_output(wait=True)
+
+        if score == 5:
+
+            message = "You got every admission-rate range right."
+
+        elif score >= 3:
+
+            message = (
+                "You had a good read on the differences "
+                "across the data."
+            )
+
+        else:
+
+            message = (
+                "The results show why comparing the data "
+                "across counties and campuses can be useful."
+            )
+
+
+        display(HTML(f"""
+
+        <div class="section-title">
+            Challenge complete
+        </div>
+
+        <div class="big-number">
+            {score} / {total_rounds}
+        </div>
+
+        <p style="font-size:18px;">
+            {message}
+        </p>
+
+        <div class="explanation">
+
+            This game used Fall 2025 freshman admissions data
+            from California public high schools.
+
+            The admission rate was calculated as:
+
+            <br><br>
+
+            <b>
+            total admitted applicants ÷ total applicants
+            </b>
+
+            <br><br>
+
+            The game compares these rates by county and
+            UC campus.
+
+        </div>
+
+        """))
+
+
+        # ----------------------------------------------------
+        # Button to open the data explorer
+        # ----------------------------------------------------
+
+        explore_button = widgets.Button(
+            description="Explore the data",
+            layout=widgets.Layout(
+                width="180px",
+                height="38px"
+            )
+        )
+
+        explore_button.on_click(
+            lambda b: show_explorer()
+        )
+
+        display(explore_button)
+
+
+# ------------------------------------------------------------
+# 16. DATA EXPLORER
+# ------------------------------------------------------------
+
+def show_explorer():
+
+    with game_output:
+
+        clear_output(wait=True)
+
+        display(HTML("""
+
+        <div class="section-title">
+            Explore the data
+        </div>
+
+        <p>
+            Choose a county and campus to see the corresponding
+            Fall 2025 freshman admission rate.
+        </p>
+
+        """))
+
+
+        explorer_county = widgets.Dropdown(
+            options=counties,
+            description="County",
+            layout=widgets.Layout(width="420px"),
+            style={"description_width": "100px"}
+        )
+
+
+        explorer_campus = widgets.Dropdown(
+            options=campuses,
+            description="UC campus",
+            layout=widgets.Layout(width="420px"),
+            style={"description_width": "100px"}
+        )
+
+
+        explore_button = widgets.Button(
+            description="Show result",
+            layout=widgets.Layout(
+                width="160px",
+                height="38px"
+            )
+        )
+
+
+        explorer_output = widgets.Output()
+
+
+        display(explorer_county)
+        display(explorer_campus)
+        display(explore_button)
+        display(explorer_output)
+
+
+        def update_explorer(button):
+
+            with explorer_output:
+
+                clear_output(wait=True)
+
+                result = summary[
+                    (summary["county"] == explorer_county.value) &
+                    (summary["campus"] == explorer_campus.value)
+                ]
+
+
+                if len(result) == 0:
+
+                    display(HTML("""
+                    <p>
+                        There is not enough data for this
+                        county-campus combination.
+                    </p>
+                    """))
+
+                    return
+
+
+                row = result.iloc[0]
+
+                rate = row["admission_rate"] * 100
+
+                difference = (
+                    row["admission_rate"] - overall_rate
+                ) * 100
+
+
+                if difference >= 0:
+
+                    comparison = (
+                        f"{difference:.1f} percentage points "
+                        f"above the overall rate"
+                    )
+
+                else:
+
+                    comparison = (
+                        f"{abs(difference):.1f} percentage points "
+                        f"below the overall rate"
+                    )
+
+
+                display(HTML(f"""
+
+                <hr class="uc-rule">
+
+                <div class="small-label">
+                    {row["county"]} County → UC {row["campus"]}
+                </div>
+
+                <div class="big-number">
+                    {rate:.1f}%
+                </div>
+
+                <p>
+                    historical freshman admission rate
+                </p>
+
+                <div class="stat-row">
+
+                    <div>
+                        <div class="small-label">
+                            Applicants
+                        </div>
+
+                        <div class="stat-number">
+                            {int(row["applicants"]):,}
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div class="small-label">
+                            Admitted
+                        </div>
+
+                        <div class="stat-number">
+                            {int(row["admits"]):,}
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div class="small-label">
+                            Schools
+                        </div>
+
+                        <div class="stat-number">
+                            {int(row["schools"]):,}
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="explanation">
+
+                    Compared with the overall rate of
+                    <b>{overall_rate * 100:.1f}%</b>,
+                    this combination was
+                    <b>{comparison}</b>.
+
+                </div>
+
+                """))
+
+
+        explore_button.on_click(update_explorer)
+
+
+# ------------------------------------------------------------
+# 17. CONNECT START BUTTON
+# ------------------------------------------------------------
+
+start_button.on_click(start_game)
+
+
+# ------------------------------------------------------------
+# 18. METHODOLOGY NOTE
+# ------------------------------------------------------------
+
+display(HTML("""
+
+<hr class="uc-rule">
+
+<div class="section-title">
+    Methodology
+</div>
+
+<p style="max-width:800px; line-height:1.6; color:#444;">
+
+The analysis uses Fall 2025 freshman admissions records for
+California public high schools. Applicants and admits were
+summed within each county and UC campus, and the admission
+rate was calculated as total admits divided by total applicants.
+The interactive challenge allows users to compare these
+historical rates across different county and campus combinations.
+
+</p>
+
+"""))
