@@ -1,33 +1,19 @@
-# UC Admissions — Fall 2025
+#UC Admissions Data 
+Main question: Among freshman applicants from California public high schools in Fall 2025, how did admission rates vary across counties and UC campuses?”
 
-Interactive Streamlit data visualization for the UC admissions data challenge.
+Methodology
 
-## Research question
+I filtered the provided UC admissions dataset to **Fall 2025 freshman applicants from California public high schools**. I then grouped the data by **county and UC campus** and combined the number of applicants and admitted students within each group.
 
-Among freshman applicants from California public high schools in Fall 2025, how did admission rates vary across counties and UC campuses?
+I calculated the admission rate using:
 
-## Methodology
+**Admission Rate = Total Admitted Applicants ÷ Total Applicants × 100**
 
-The app filters the provided data to Fall 2025 and California public high schools, excludes the Universitywide aggregate, groups records by county and UC campus, and calculates:
+These results were used to create an interactive visualization. Users can select a California county and UC campus to see the corresponding admission rate, applicant count, and number of admitted students. A 3D visualization allows users to explore how admission rates differ across county and campus combinations, while a comparison chart shows differences among UC campuses within a selected county.
 
-Admission rate = total admitted applicants / total applicants
+The analysis describes **historical admission rates in the dataset**; it is not intended to predict an individual student's likelihood of admission.
 
-The app includes:
-- County and UC campus selectors
-- Historical admission-rate result
-- Applicant/admit counts
-- A guessing component
-- Interactive 3D county × campus visualization
-- Campus comparison chart
-- Methodology section
 
-## Run locally
+The link to my dashboard is:
+https://uc-dashboard-construction--lexi-he-cts4bjjdjnhyzk9veslj2g.streamlit.app/
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-The CSV file must be in the same folder as `app.py` and named:
-
-`dashboard_data(1).csv`
