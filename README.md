@@ -1,4 +1,5 @@
-#UC Admissions Data 
+##UC Admissions Data 
+
 Main question: Among freshman applicants from California public high schools in Fall 2025, how did admission rates vary across counties and UC campuses?”
 
 Methodology
